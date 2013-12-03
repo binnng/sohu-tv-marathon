@@ -1,0 +1,1 @@
+var Storage=function(){var a=window,b=a.localStorage,c=b&&b.getItem,d={get:function(a){return c?b.getItem(a):Cookie.get(a)},set:function(a,d){return c?b.setItem(a,d):Cookie.set(a,d,720)}};return d}();

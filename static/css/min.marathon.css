@@ -1,0 +1,801 @@
+html {
+  color: #000;
+  background: #ffffff;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+legend {
+  color: #000000;
+}
+div,
+p,
+dl,
+dd,
+a,
+b,
+u,
+em,
+input,
+textarea,
+button,
+select,
+form,
+section,
+label,
+span,
+td,
+li,
+nav,
+footer,
+body,
+ul,
+i {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a:focus,
+a:active,
+input {
+  outline: none;
+}
+body,
+td,
+input,
+textarea,
+option,
+select,
+button {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  -webkit-text-size-adjust: none;
+}
+img,
+video,
+nav,
+textarea,
+input,
+button {
+  border: 0;
+  vertical-align: bottom;
+  background: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+a,
+u {
+  text-decoration: none;
+}
+.show {
+  visibility: visible !important;
+}
+button,
+.button {
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: .5em 1.4em;
+  color: #fff;
+  background: #ababab;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#c2c2c2), to(#ababab));
+  border: 1px #a4a4a4 solid;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-appearance: none;
+}
+button.active,
+.button.active {
+  background: #d21d22;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ed2327), to(#d21d22));
+  border: 1px #b40408 solid;
+}
+button.active:active,
+.button.active:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset;
+}
+a,
+a:hover,
+a:active,
+a:visited {
+  color: #6f6f6f;
+}
+html,
+body {
+  background-color: #fb4903;
+}
+body {
+  position: relative;
+  font-size: 1em;
+}
+noscript p {
+  background: #fffddd;
+  padding: .5em .8em;
+  line-height: 1.5;
+  border-bottom: 1px solid #ccc;
+}
+.wrapper {
+  position: relative;
+}
+.content {
+  margin: 0 5px;
+  background: #fff;
+  color: #6f6f6f;
+  font-size: .8em;
+}
+.cover .hd,
+.cover .ft {
+  background-size: cover;
+}
+.cover .hd {
+  height: 137px;
+  background-image: url("http://tv.sohu.com/upload/touch/static/images/marathon/cover1.png");
+}
+.cover .ft {
+  height: 143px;
+  background-image: url("http://tv.sohu.com/upload/touch/static/images/marathon/cover2.png");
+}
+.tabs > .hd {
+  overflow: hidden;
+}
+.tabs > .hd li {
+  float: left;
+  text-align: center;
+  width: 20%;
+  border-right: 1px solid #fb4903;
+  border-bottom: 1px solid #fb4903;
+  background-color: #f6f6f6;
+  color: #aaa;
+  font-size: .9em;
+  padding: 5px 0;
+}
+.tabs > .hd li span,
+.tabs > .hd li b,
+.tabs > .hd li em {
+  display: block;
+  line-height: 1.2;
+}
+.tabs > .hd li span {
+  font-size: 10px;
+}
+.tabs > .hd li b {
+  font-size: 14px;
+}
+.tabs > .hd li em {
+  display: inline-block;
+  padding: 0 2px;
+  font-size: 10px;
+  color: #fff;
+  background-color: #aaa;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.tabs > .hd li.active {
+  color: #fb4903;
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+.tabs > .hd li.active em {
+  background-color: #fb4903;
+}
+.tabs > .hd li.last {
+  border-right: none;
+}
+.rules {
+  padding: .9em 8px 0 8px;
+  font-size: .82em;
+  position: relative;
+}
+.rules .time span {
+  color: #fb4903;
+}
+.rules p:not(.time) {
+  float: left;
+}
+.rules ul {
+  overflow: hidden;
+  padding-bottom: .9em;
+}
+.rules li {
+  list-style: disc inside none;
+  margin-left: 1px;
+  line-height: 1.5;
+}
+.rules li a {
+  color: #fb4903;
+}
+.rules li.only-client {
+  display: none;
+}
+.rules li .only-h5 {
+  display: none;
+}
+.rules > .ft {
+  border-top: 1px #dee0e0 dashed;
+  position: relative;
+  padding: .8em 8px;
+}
+.rules > .ft:before,
+.rules > .ft:after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fb4903;
+  top: -5px;
+  left: -13px;
+  right: auto;
+  border-radius: 10px;
+}
+.rules > .ft:after {
+  left: auto;
+  right: -13px;
+}
+.rules > .ft .join {
+  display: block;
+  width: 100%;
+  font-size: 1.2em;
+}
+html.h5 .rules li .only-h5 {
+  display: inline;
+}
+.boo {
+  display: none;
+}
+.boo.active {
+  display: block;
+}
+.boo.after .award > .bd li button {
+  display: none;
+}
+.award {
+  padding: 0 .8em .4em .8em;
+}
+.award > .bd li {
+  position: relative;
+  border-top: 1px #dee0e0 dashed;
+  overflow: hidden;
+  padding: .8em 0;
+  font-size: .9em;
+  background-color: #f5f5f5;
+}
+.award > .bd li:first-of-type {
+  border-top: none;
+}
+.award > .bd li .img {
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  left: 6px;
+  width: 62px;
+  height: 75px;
+  background-image: url("http://tv.sohu.com/upload/touch/static/images/marathon/award.png");
+  background-size: 125px;
+  background-repeat: no-repeat;
+}
+.award > .bd li .img[type="2"] {
+  background-position: 0 -75px;
+}
+.award > .bd li .img[type="3"] {
+  background-position: 0 -150px;
+}
+.award > .bd li .img[type="4"] {
+  background-position: 0 -225px;
+}
+.award > .bd li .img[type="5"] {
+  background-position: 0 -300px;
+}
+.award > .bd li .img[type="6"] {
+  background-position: 0 -375px;
+}
+.award > .bd li .img[type="7"] {
+  background-position: 0 -450px;
+}
+.award > .bd li .img[type="8"] {
+  background-position: 0 -525px;
+}
+.award > .bd li .img[type="9"] {
+  background-position: 0 -600px;
+}
+.award > .bd li > span,
+.award > .bd li b:not(.img),
+.award > .bd li em {
+  display: block;
+  margin: 2px 9em 2px 77px;
+}
+.award > .bd li > b:not(.img) {
+  font-size: 1.1em;
+}
+.award > .bd li > span {
+  background-color: #a4a4a4;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0 .2em;
+  display: inline-block;
+}
+.award > .bd li button {
+  position: absolute;
+  visibility: hidden;
+  padding: .5em .4em;
+  right: .6em;
+  top: 50%;
+  margin-top: -1.1em;
+}
+.joined .award > .bd li > span {
+  background-color: #d60012;
+}
+.joined .award > .bd li > b:not(.img) {
+  color: #fb4903;
+}
+.joined .award > .bd li .img[type="1"] {
+  background-position: -63px 0;
+}
+.joined .award > .bd li .img[type="2"] {
+  background-position: -63px -75px;
+}
+.joined .award > .bd li .img[type="3"] {
+  background-position: -63px -150px;
+}
+.joined .award > .bd li .img[type="4"] {
+  background-position: -63px -225px;
+}
+.joined .award > .bd li .img[type="5"] {
+  background-position: -63px -300px;
+}
+.joined .award > .bd li .img[type="6"] {
+  background-position: -63px -375px;
+}
+.joined .award > .bd li .img[type="7"] {
+  background-position: -63px -450px;
+}
+.joined .award > .bd li .img[type="8"] {
+  background-position: -63px -525px;
+}
+.joined .award > .bd li .img[type="9"] {
+  background-position: -63px -600px;
+}
+.data-complete .award > .bd li button {
+  visibility: visible;
+}
+.award-des {
+  padding: 0 .8em .4em .8em;
+  margin: .4em 0;
+}
+.award-des p {
+  font-size: .76em;
+}
+.award-des p:first-of-type {
+  margin-left: 0;
+}
+.award-des a {
+  color: #fb4903;
+}
+.recommend,
+.vip {
+  border-top: 4px #fb4903 solid;
+  padding: .4em .6em .8em .6em;
+  font-size: .8em;
+}
+.recommend > .hd,
+.vip > .hd {
+  color: #222;
+  padding: .4em 0;
+  font-size: 1.2em;
+}
+.recommend > .hd a,
+.vip > .hd a {
+  float: right;
+  color: #6f6f6f;
+  font-size: .9em;
+}
+.recommend > .bd,
+.vip > .bd {
+  border-top: 1px #dee0e0 dashed;
+  text-align: justify;
+}
+.recommend > .bd .box,
+.vip > .bd .box {
+  display: inline-block;
+  -webkit-transition: .1s all ease;
+  transition: .1s all ease;
+  width: 33.3%;
+  padding: 10px 4px 0 4px;
+}
+.recommend > .bd .box b,
+.vip > .bd .box b {
+  display: block;
+  position: relative;
+  height: 75px;
+  background-color: #ddd;
+  background-size: cover;
+  background-position: center;
+}
+.recommend > .bd .box p,
+.vip > .bd .box p {
+  padding-top: .4em;
+}
+.recommend > .bd .box span,
+.vip > .bd .box span {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  border-radius: 37px;
+  left: 50%;
+  top: 50%;
+  margin: -16px 0 0 -16px;
+  background-image: url("http://tv.sohu.com/upload/touch/static/images/marathon/player_button.png");
+  background-size: 37px;
+  opacity: .7;
+}
+.recommend > .bd .box:active span,
+.vip > .bd .box:active span {
+  opacity: 1;
+}
+.recommend > .bd .box.item,
+.vip > .bd .box.item {
+  float: left;
+  width: 94px;
+}
+.recommend .scroll_wrap,
+.vip .scroll_wrap {
+  overflow: hidden;
+  position: relative;
+}
+.recommend .scroller,
+.vip .scroller {
+  overflow: hidden;
+  position: relative;
+  width: 8000px;
+}
+.vip > .bd .box b {
+  height: 45px;
+  background-image: url("http://tv.sohu.com/upload/touch/static/images/marathon/vip1.png");
+}
+.vip > .bd .box .vip2 {
+  background-image: url("http://tv.sohu.com/upload/touch/static/images/marathon/vip2.png");
+}
+.vip > .bd .box .vip3 {
+  background-image: url("http://tv.sohu.com/upload/touch/static/images/marathon/vip3.png");
+}
+.vip > .bd .box p {
+  text-align: center;
+}
+.footer {
+  text-align: center;
+  font-size: .6em;
+  padding: 2em 2em;
+  color: #ecd6cf;
+}
+.footer b {
+  display: block;
+  height: 1px;
+  background-color: #ecd6cf;
+}
+.footer p {
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  padding: 0 2em;
+  background-color: #fb4903;
+}
+.pinner {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 24px 20px;
+  width: 220px;
+  margin-left: -110px;
+  position: fixed;
+  left: 50%;
+  color: #fff;
+  z-index: 500;
+  font-size: .9em;
+  background-position: 4px -30px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  bottom: 10px;
+  -webkit-transform: translate3d(0, 250px, 0);
+  -webkit-transition: -webkit-transform 400ms;
+  opacity: 0;
+}
+.pinner .app_download {
+  display: block;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  margin-top: 1em;
+  color: #fff;
+  width: 100%;
+}
+.pinner b {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+.pinner em {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url("http://tv.sohu.com/upload/touch/static/images/marathon/x.png");
+  background-size: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.pinner .nx {
+  display: none;
+}
+.pinner.show {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.pinner.client b,
+.pinner.client span,
+.pinner.client .app_download {
+  display: none;
+}
+.pinner.client .nx {
+  display: block;
+}
+.popup {
+  width: 90%;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  display: none;
+  margin: 1em auto;
+  color: #fff;
+  padding: 1.2em 1.4em;
+  font-size: .8em;
+  z-index: 88888888;
+  position: relative;
+}
+.popup.user-info form {
+  margin: 1.2em 0;
+}
+.popup.user-info input {
+  background-color: #f4f4f4;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  display: block;
+  width: 100%;
+  margin: 1.2em 0;
+  padding: .4em;
+}
+.popup.user-info .submit {
+  display: block;
+  margin: 1em auto;
+}
+.popup.user-info.hide {
+  display: none;
+}
+.popup.success {
+  padding: 4em 1.4em;
+}
+.popup.success p {
+  display: none;
+}
+.popup.success.short .type1 {
+  display: block;
+}
+.popup.success.long .type2 {
+  display: block;
+}
+html.lower-android .pinner {
+  position: absolute;
+  top: 50px;
+  height: 140px;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+html.lower-android .pinner2 {
+  position: absolute;
+  -webkit-transform: translate3d(0, -100px, 0);
+  border: none;
+  border-radius: 0;
+  padding: 8px 10px;
+  text-align: left;
+  top: 0;
+  left: 0;
+  margin-left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+html.lower-android .pinner2 b {
+  margin: 0;
+  margin-bottom: 4px;
+}
+html.lower-android .pinner2 .app_download {
+  position: absolute;
+  margin: 0;
+  top: 14px;
+  right: 36px;
+  width: auto;
+}
+html.lower-android .pinner2.show {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+html.old-client .only-client {
+  display: list-item;
+}
+html.old-client .pinner .app_download {
+  display: none;
+}
+.award-ann h1 {
+  text-align: center;
+  font-size: 1.2em;
+  color: #eee;
+  margin: .8em 0;
+}
+.award-ann .wrapper .inner {
+  width: 96%;
+  margin: 1em auto;
+  padding: 1em;
+  background-color: #fff;
+}
+.award-ann .wrapper .inner h2 {
+  margin-bottom: .6em;
+  font-size: 1em;
+}
+.award-ann .wrapper .inner p {
+  color: #6f6f6f;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  font-size: .8em;
+}
+@media (min-width: 400px) {
+  .cover .hd,
+  .cover .ft {
+    height: 180px;
+  }
+  .recommend > .bd .box.item,
+  .vip > .bd .box.item {
+    width: 120px;
+  }
+}
+@media (min-width: 480px) {
+  .content {
+    font-size: 1em;
+    line-height: 1.8;
+  }
+  .cover .hd,
+  .cover .ft {
+    height: 220px;
+  }
+  .recommend > .bd .box b,
+  .vip > .bd .box b {
+    height: 95px;
+  }
+  .recommend > .bd .box.item,
+  .vip > .bd .box.item {
+    width: 160px;
+  }
+}
+@media (min-width: 721px) {
+  .cover {
+    overflow: hidden;
+  }
+  .cover .hd,
+  .cover .ft {
+    height: 320px;
+  }
+  .recommend > .bd .box b,
+  .vip > .bd .box b {
+    height: 125px;
+  }
+  .recommend > .bd .box.item,
+  .vip > .bd .box.item {
+    width: 200px;
+  }
+}
+@media (min-width: 820px) {
+  .cover .hd,
+  .cover .ft {
+    height: 420px;
+  }
+  .recommend > .bd .box b,
+  .vip > .bd .box b {
+    height: 185px;
+  }
+  .recommend > .bd .box.item,
+  .vip > .bd .box.item {
+    width: 240px;
+  }
+}
