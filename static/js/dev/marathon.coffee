@@ -95,7 +95,7 @@ isJustJoin = no
 
 
 
-##本地是不是存储了参加信息，客户端内嵌这句会报错
+##本地是不是存储了参加信息，客户端内嵌可能没开启Storage，要用Cookie模拟
 isJoined = !!Storage.get 'marathon-joind'
 
 #正在领奖的编号
@@ -276,8 +276,6 @@ User =
 	init: () ->
 
 		return User.unJoined() if IsFromOldClient
-
-		#return alert 'UID为空，需要访问一次m.tv.sohu.com' unless UID
 
 		if isJoined is no
 
@@ -471,10 +469,6 @@ User =
 
 				order = totalOrder = 10001 if res.isdel is 1
 
-				# if Week - 5 is 0
-				# 	vv = totalVv
-				# 	order = totalOrder
-
 				#已经结束的波数显示已经结束
 				if boo + 1 < Week
 					#除去全程的奖品，首位和末位
@@ -609,7 +603,7 @@ Client =
 		args = "action=#{actionId}&vid=#{vid}&cid=#{cid}&catecode=#{catecode}&sid=#{sid}&urls=#{urls}"
 		el.attr 'href', Client.protocol + 'action.cmd?' + args.replace(/index\.html%2C/, 'index.html,')
 
-
+# 彩蛋，帮开发针对用户调试
 Bonus = () ->
 
 	stack = 0
@@ -618,17 +612,6 @@ Bonus = () ->
 		stack++
 		alert UID if stack % 5 is 0
 		alert HREF if stack % 8 is 0
-
-	# elScroller.on MOVE_EVENT, (e) ->
-	# 	startx = $(this).attr 'startx' if startx < 0
-
-	# elScroller.on END_EVENT, (e) ->
-	# 	endx = $(this).attr 'startx' if endx < 0
-
-	# 	if endx is startx
-	# 		stack++
-
-	# 		console.log stack
 
 		
 
